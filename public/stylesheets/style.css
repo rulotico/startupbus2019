@@ -1,8 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap');
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+
+
+/* /LAYOUT/ */
+
+.top{
+  position: fixed;
+  width: 100%;
+  background-color: #2D3133;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+  z-index: 1;
+}
+
+.top .options div{
+  cursor: pointer;
+}
+
+.top .options div:hover{
+  opacity: .7;
+}
+
+.top a{
+  text-decoration: none;
+  color: white;
+}
+
+.logo{
+  height: 30px;
+}
+
+.options{
+  display: flex;
+}
+
+.options div{
+  padding: 1em;
+}
+
+/* VIDEO */
+
+iframe{
+  width: 100%;
+  height: 57vw;
+}
+
+.video_shadow{
+  background-color: gray;
+      height: 46.5vw;
+  width: 100%;
+  position: absolute;
+    margin-top: 70px;
+
+
+
+    background: rgba(84,85,102,1);
+background: -moz-linear-gradient(top, rgba(167, 84, 45, 0.42) 0%, rgba(247, 251, 15, 0.26) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(167, 101, 45, 0.85)), color-stop(100%, rgba(247, 251, 15, 0.32)));
+background: -webkit-linear-gradient(135deg, rgba(167, 84, 45, 0.42) 0%, rgba(247, 251, 15, 0.26) 100%);
+background: -o-linear-gradient(135deg, rgba(167, 84, 45, 0.42) 0%, rgba(247, 251, 15, 0.26) 100%);
+background: -ms-linear-gradient(135deg, rgba(167, 84, 45, 0.42) 0%, rgba(247, 251, 15, 0.26) 100%);
+background: linear-gradient(135deg, rgba(167, 84, 45, 0.42) 0%, rgba(247, 251, 15, 0.26) 100%)
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545566', endColorstr='#ffffff', GradientType=0 );
+
+pointer-events: none;
+}
+
+.video_container{
+  height: 61.5vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.video{
+    margin-top: -3em;
+        background-color: black;
+}
+
+/* /CONTENT/ */
+
+.content{
+  max-width: 1100px;
+    margin: auto;
+
+}
+
+
+.info{
+
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  border-top: 0px;
+}
+
+.info >div{
+  padding: 1em;
+  border-left: 1px solid;
+  width: -webkit-fill-available;
+}
+
+.logo-lg{
+      border-left: 0px solid !important;
+
+}
+
+.logo-lg img{
+  width: 200px;
+}
+
+
+/* PATROCINADORES */
+.patrocinadores{
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.beat img{
+  width: 200px;
+}
+.pat-2 >div{
+  text-align: center;
+  width: -webkit-fill-available;
+  padding: 3em;
+}
+.pat-2 img{
+  max-height: 200px;
+}
+
+/* BUSPRENEURS */
+.grid-busp{
+  width: 100%;
+  display: flow-root;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.col{
+  width: 33.33%;
+    float: left;
+}
+.photo{
+
+  padding: 10px;
+}
+
+.data{
+  background-color: black;
+  height: 20em;
+}
+
+/* CONDUCTORS */
+
+.grid-conductors{
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.conductor{
+
+}
+
+.photo_c{
+  border-radius: 100%;
+overflow: hidden;
+max-height: 200px;
+}
+.conductor img{
+  max-width: 200px;
+}
+
+.footer{
+  padding: .5em;
+  background-color: #2D3133;
+  color: white;
+
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> HELPERS */
+.no-margin{
+  margin: 0;
+}
+
+.center-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center{
+  text-align: center;
 }

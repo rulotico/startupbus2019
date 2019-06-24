@@ -3,5 +3,27 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="shortcut icon" type="image/png" href="/favicon.ico")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
   body
-    block content
+    .top.animated.fadeInDown
+      .logo
+        img.logo(src="images/nav-logo.svg", alt="")
+      .options
+          div
+            a(href="#sponsor") SPONSORS
+          div
+            a(href="#ruta") RUTA
+          div
+            a(href="#port") PORT
+    
+    .video_container.animated.fadeIn
+      .video_shadow
+      .video
+        /* https://www.youtube.com/watch?v=y6voXG-KKYU
+        <iframe src="https://www.youtube.com/embed/ONwg6Ec4tyM?autoplay=0&modestbranding=1&showinfo=0&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+      
+    .content
+      block content
+    .footer Startupbus 2019
