@@ -16,24 +16,33 @@ a {
 /* /LAYOUT/ */
 
 .top{
-  position: fixed;
-  width: 100%;
-  background-color: #2D3133;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  background-color: rgba(45, 49, 51, 0.95);
   color: white;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  position: fixed;
+  width: 100%;
+}
+.logo{
+  padding-left: 3em;
+}
+
+.options{
+  padding-right: 11em;
+}
+.logo img{
+  height: 20px;
 }
 
 .top .options div{
   cursor: pointer;
+  opacity: .7;
 }
 
 .top .options div:hover{
-  opacity: .7;
+opacity: 1;
 }
 
 .top a{
@@ -41,16 +50,13 @@ a {
   color: white;
 }
 
-.logo{
-  height: 30px;
-}
-
 .options{
   display: flex;
+  font-size: 11px;
 }
 
 .options div{
-  padding: 1em;
+  padding: 1.8em;
 }
 
 /* VIDEO */
@@ -62,10 +68,9 @@ iframe{
 
 .video_shadow{
   background-color: gray;
-      height: 46.5vw;
+      height: 54.5vw;
   width: 100%;
   position: absolute;
-    margin-top: 70px;
 
 
 
@@ -86,6 +91,7 @@ pointer-events: none;
     overflow: hidden;
     position: relative;
     z-index: 0;
+    background-color: black;
 }
 
 .video{
@@ -188,9 +194,10 @@ max-height: 200px;
 }
 
 .footer{
-  padding: .5em;
-  background-color: #2D3133;
-  color: white;
+    font-size: 12px;
+      padding: .5em;
+      background-color: #2D3133;
+      color: #a29a9a;
 
 }
 
@@ -207,4 +214,10 @@ max-height: 200px;
 
 .text-center{
   text-align: center;
+}
+
+.import{
+  background-color: #2D3133;
+color: white;
+padding: .5em;
 }
