@@ -109,17 +109,22 @@ pointer-events: none;
 
 
 .info{
-
+  margin-top: -90px;
   display: flex;
   width: 100%;
   border: 1px solid black;
-  border-top: 0px;
+  border-bottom: 0px;
+  background-color: rgba(72, 82, 86, 0.33)
+
 }
 
 .info >div{
   padding: 1em;
   border-left: 1px solid;
   width: -webkit-fill-available;
+}
+.info h1{
+  color: white;
 }
 
 .logo-lg{
@@ -139,7 +144,8 @@ pointer-events: none;
 }
 
 .beat img{
-  width: 200px;
+  width: 183px;
+
 }
 .pat-2 >div{
   text-align: center;
@@ -148,6 +154,7 @@ pointer-events: none;
 }
 .pat-2 img{
   max-height: 200px;
+  max-width: 230px;
 }
 
 /* BUSPRENEURS */
@@ -194,7 +201,7 @@ max-height: 200px;
 }
 
 .footer{
-    font-size: 12px;
+      font-size: 12px;
       padding: .5em;
       background-color: #2D3133;
       color: #a29a9a;
@@ -220,4 +227,47 @@ max-height: 200px;
   background-color: #2D3133;
 color: white;
 padding: .5em;
+}
+
+.photo{
+
+}
+
+.text_u{
+  pointer-events: none;
+      position: relative;
+      z-index: 10;
+      opacity: 0;
+      text-align: center;
+      width: 100%;
+      float: left;
+      padding-top: 5em;
+      color: white;
+      font-weight: bold;
+      font-size: 27px;
+      text-shadow: 2px 2px #ec1784;
+      text-transform: uppercase;
+}
+
+.photo:hover > *{
+  opacity: 1 !important;
+  transition: 1s;
+}
+
+.data {
+  background-size: cover !important;
+  background: center center;
+  cursor: pointer;
+  background-color: black;
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+.data:hover {
+
+  -webkit-filter: blur(2px) grayscale(100%);
+  -moz-filter: blur(2px) grayscale(100%);
+  -o-filter: blur(2px) grayscale(100%);
+  -ms-filter: blur(2px) grayscale(100%);
+  filter: blur(2px) grayscale(100%);
 }
