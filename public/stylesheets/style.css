@@ -335,6 +335,15 @@ padding: .5em;
 @media (max-width:500px) {
 
   .video_container{
-    height: 22.5vh;
+        height: 31.5vh;
+  }
+  .info{
+    margin-top: -127px;
+  }
+  .video{
+        margin-top: 3em;
+  }
+  .video_shadow{
+        height: 83.5vw;
   }
 }
