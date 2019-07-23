@@ -231,6 +231,37 @@ max-height: 200px;
       color: #a29a9a;
 
 }
+/*
+MENTORS */
+
+
+.mentor .data{
+  border-radius: 6px;
+height: 154px
+}
+
+.mentor .text_u {
+  padding-top: 5px;
+
+    font-size: 14px;
+    color: white;
+
+    font-weight: 100;
+    text-shadow: none;
+
+
+    text-align: left;
+
+    text-transform: none;
+}
+
+.mentor .text_u p{
+  height: 134px;
+      overflow: scroll;
+      padding: 0em 1.2em;
+      text-shadow: 1px 1px 2px black;
+}
+
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> HELPERS */
 .no-margin{
