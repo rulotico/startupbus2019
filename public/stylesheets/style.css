@@ -172,6 +172,14 @@ pointer-events: none;
   max-height: 200px;
   max-width: 230px;
 }
+.mother img{
+  max-height: 200px;
+  max-width: 230px;
+}
+
+.gopie img{
+  max-height: 120px;
+}
 
 /* BUSPRENEURS */
 .grid-busp{
