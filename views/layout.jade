@@ -16,25 +16,29 @@ html
     meta(property="og:image" content="/landscape.png")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     
+    script(type="text/javascript" src="/javascripts/index.js")
+    
     
     
   body
+    .map(onclick="hide()").animation.fadeIn
+      iframe( class="map_frame" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3224996.815380429!2d-99.08502107199563!3d25.491120660398256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x85ce0026db097507%3A0x54061076265ee841!2sMexico+DF%2C+CDMX!3m2!1d19.4326077!2d-99.133208!4m5!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2sNew+Orleans%2C+LA%2C+USA!3m2!1d29.9510658!2d-90.0715323!5e0!3m2!1sen!2smx!4v1563860856970!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
     .top.animated.fadeInDown
       .logo
         img.logo(src="images/nav-logo.svg", alt="")
       .options
           div
             a(href="#sponsor") SPONSORS
-          div
-            a(href="#ruta") RUTA
+          div.ruta
+            a(href="#ruta" onclick="show()") RUTA
           div
             a(href="#port") PARTICIPANTES
     
     .video_container.animated.fadeIn
       .video_shadow
       .video
-        /* https://www.youtube.com/watch?v=y6voXG-KKYU
-        <iframe src="https://www.youtube.com/embed/ONwg6Ec4tyM?start=4&autoplay=1&mute=1&modestbranding=1&showinfo=0&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <iframe class="video_frame" src="https://www.youtube.com/embed/ONwg6Ec4tyM?start=4&autoplay=1&mute=1&modestbranding=1&showinfo=0&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
       
     .content

@@ -59,9 +59,26 @@ opacity: 1;
   padding: 1.8em;
 }
 
+/* MAP */
+.map{
+  position: fixed;
+  background: rgba(0,0,0,.8);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  text-align: center;
+padding-top: 10em;
+display: none;
+}
+.map_frame{
+    border: 0;
+    border-radius: 9px;
+    box-shadow: 0px 1px 4px 0px rgba(82, 79, 79, 0.96);
+}
+
 /* VIDEO */
 
-iframe{
+.video_frame{
   width: 100%;
   height: 57vw;
 }
@@ -244,7 +261,7 @@ padding: .5em;
       color: white;
       font-weight: bold;
       font-size: 27px;
-      text-shadow: 2px 2px #ec1784;
+      text-shadow: 2px 2px #20CCA0;
       text-transform: uppercase;
 }
 
